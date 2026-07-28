@@ -1,0 +1,19 @@
+---
+const { children, lang } = Astro.props;
+---
+<html lang={lang === 'en' ? 'en' : 'id'}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Dliya'ul Haq — Portfolio</title>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/global.css" />
+  </head>
+  <body class="bg-gray-50 text-slate-900">
+    <slot name="header" />
+    {children}
+    <footer class="border-t mt-12 py-6 text-center text-sm text-gray-500">
+      © {new Date().getFullYear()} Muhammad Dliya'ul Haq — Built with Astro
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+---
+// Minimal Home page (ID)
+import Layout from '../../layouts/Layout.astro';
+import Hero from '../../components/Hero.astro';
+const lang = 'id';
+---
+<Layout lang={lang}>
+  <Hero
+    name="Muhammad Dliya'ul Haq"
+    title="Data Analyst • K3 • PPIC"
+    subtitle="Fresh graduate Teknik Industri. Meningkatkan efisiensi produksi dan keselamatan operasional melalui analisis data dan optimasi jadwal preventive maintenance."
+    ctaPrimary={{ label: 'Lihat Proyek', href: '/id/work' }}
+    ctaSecondary={{ label: 'Unduh CV', href: '/public/CV.pdf' }}
+  />
+  <section class="container mx-auto py-8 px-4">
+    <h2 class="text-2xl font-semibold mb-4">Proyek Terpilih</h2>
+    <p class="text-gray-600">Project cards akan tampil di sini. (Project menyusul — saya siapkan template case study)</p>
+  </section>
+</Layout>
