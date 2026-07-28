@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const FORM_ENDPOINT = 'https://formspree.io/f/your-form-id'; // <-- replace with your Formspree endpoint
+const FORM_ENDPOINT = 'https://formspree.io/f/xrenjank'; // <-- replace with your Formspree endpoint
 
 export default function ContactForm() {
   const [status, setStatus] = useState('');
